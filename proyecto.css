@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.primerdiv {
+background-color: #90e7d4;
+height: 52px;
+}
+
+.titulo {
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+margin: auto;
+}
+.navegador{
+    margin: auto;
+    height: 239px;
+    background-color:white;
+    
+}
+
+.logo {
+    width: 130.05px;
+    height: 138px;
+ 
+
+}
+
+.menu {
+    width: 600px;
+    height: 59.6px;
+    position: absolute;
+    left: 70%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.boton1 {
+    border: none;
+    color: #fa8c7c;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 20px;
+}
+
+.submenu {
+    width: 650px;
+    height: 38px;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    background-color: white;
+
+}
+
+.boton2 {
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif ;
+    border: none;
+    color: black;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.section {
+    background-color: rgb(229, 230, 232);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 98%;
+    margin: 15px;
+    border-radius: 20 px;
+    box: shadow 10px 10px 10px rgba (0,0,0, .5);
+
+}
+
+.parrafo {
+    width: 460px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 20px;
+}
+.boton3 {
+    border: none;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 20px;
+    background-color: #fa8c7c;
+    
+}
+
+.sala {
+    width: 580x;
+    height: 300px;
+    margin: 30px;
+}
+
+
+.cuadro {
+    width: 205px;
+    height: 360px;
+    margin: 130px;
+    margin-block: 20px;
+}
+
+#conteItemsCarrusel{
+height: 500px;
+overflow: hidden;
+
+}
+.itemCarrusel{
+    height: 100%;
+    position: relative;
+}
+
+.tarjetaCarrusel{
+    height: 100%;
+}
+
+.flechasCarrucel{
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#tarjetaCarrusel-1{
+    background-color: #fa8c7c;
+}
+
+#tarjetaCarrusel-2{
+    background-color: #fa8c7c;
+}
+
+#tarjetaCarrusel-3{
+    background-color: #fa8c7c;
+}
+
+a{
+    text-decoration: none;
+}
+
+.carru{
+    width: 100%;
+    height: 100%;   
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  --light: #ffffff;
+  --dark: #000;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h3 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 2.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: 0.3s ease-in;
+  border-bottom: 1px solid transparent;
+  margin-bottom: 0.5rem;
+  display: inline-flex;
+}
+a:hover {
+  border-bottom: 1px solid var(--dark);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+}
+.flex {
+  display: flex;
+}
+.footer_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  border: none;
+}
+.footer_inner {
+  background: var(--light);
+  backdrop-filter: blur(50px);
+  border: 0.1px solid rgba(233, 232, 232, 0.208);
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, 400px);
+  border-bottom: 1px solid var(--dark);
+}
+
+input {
+  padding: 0.75rem 0;
+  border: none;
+  background: none;
+  font-weight: 500;
+  transition: border 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 0;
+  width: 100%;
+  font-size: 1.05rem;
+  font-weight: bolder;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: var(--dark);
+}
+@media (min-width: 675px) {
+  .layout {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  .w-25 {
+    width: 25%;
+  }
+}
+form {
+  position: relative;
+}
+svg {
+  margin: 0.5rem;
+}
+.c-2 {
+  margin-top: 3.5rem;
+}
+.footer_copyright {
+  color: var(--light);
+}
